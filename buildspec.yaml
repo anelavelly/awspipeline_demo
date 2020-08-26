@@ -1,0 +1,9 @@
+version: 0.2
+
+phases:
+  build:
+    commands:
+       - pip3 install --upgrade awscli
+       - aws --version
+       - aws sts get-caller-identity
+       - aws s3 ls
